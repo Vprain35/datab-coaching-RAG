@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #0f172a;
+    color: white;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.background-glow {
+    position: fixed;
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(circle, rgba(59,130,246,0.25), transparent 70%);
+    top: -200px;
+    right: -150px;
+    z-index: 0;
+}
+
+.app-container {
+    position: relative;
+    z-index: 1;
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.header {
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.header p {
+    color: #94a3b8;
+    font-size: 1.1rem;
+}
+
+.query-card,
+.response-card {
+    background: rgba(15, 23, 42, 0.8);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 20px;
+    padding: 25px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.35);
+    margin-bottom: 25px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #cbd5e1;
+}
+
+select,
+textarea {
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+    background: #1e293b;
+    color: white;
+    padding: 15px;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.2s ease;
+}
+
+select:focus,
+textarea:focus {
+    box-shadow: 0 0 0 2px #3b82f6;
+}
+
+textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #2563eb, #3b82f6);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(59,130,246,0.35);
+}
+
+.response-header {
+    margin-bottom: 15px;
+}
+
+.response-header h2 {
+    font-size: 1.4rem;
+}
+
+#responseBox {
+    background: #111827;
+    border-radius: 12px;
+    padding: 20px;
+    min-height: 150px;
+    line-height: 1.7;
+    color: #e2e8f0;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+}

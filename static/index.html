@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coaching Intelligence Dashboard</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="background-glow"></div>
+
+<div class="app-container">
+
+    <div class="header">
+        <h1>Coaching Intelligence</h1>
+        <p>Search reports, scouting notes, and roster analysis</p>
+    </div>
+
+    <div class="query-card">
+
+        <div class="input-group">
+            <label for="collection">Select Collection</label>
+            <select id="collection">
+                <option value="opponents_2026">Opponents 2026</option>
+                <option value="roster_2026">Roster 2026</option>
+                <option value="scouting_2027">Scouting 2027</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="question">Question</label>
+            <textarea
+                id="question"
+                placeholder="Ask about tendencies, player fit, opponent weaknesses..."
+            ></textarea>
+        </div>
+
+        <button onclick="submitQuery()" id="submitBtn">
+            Submit Query
+        </button>
+
+    </div>
+
+    <div class="response-card">
+        <div class="response-header">
+            <h2>Response</h2>
+        </div>
+
+        <div id="responseBox">
+            Your response will appear here...
+        </div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
